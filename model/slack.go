@@ -24,8 +24,8 @@ type SlackPayload struct {
 }
 
 // NewSlack returns a initialized Slack struct by config.toml
-func NewSlack() (s Slack, err error) {
-	_, err = toml.DecodeFile("config.toml", &s)
+func NewSlack(filePath string) (s Slack, err error) {
+	_, err = toml.DecodeFile(filePath, &s)
 	return
 }
 
