@@ -18,9 +18,9 @@ func init() {
 	usr, _ := user.Current()
 	homeDir := usr.HomeDir
 
-	flag.StringVar(&textOpt, "m", "default", "message string")
-	flag.StringVar(&channelOpt, "ch", "test", "channel to send")
-	flag.StringVar(&configOpt, "config", homeDir+"/slack-post-cli.toml", "config file path")
+	flag.StringVar(&textOpt, "m", "Hello, Slack! :wave:", "message string")
+	flag.StringVar(&channelOpt, "to", "test", "channel or username to send")
+	flag.StringVar(&configOpt, "config", homeDir+"/slack-post-cli.toml", "config toml file path")
 }
 
 func main() {
