@@ -1,6 +1,0 @@
-# set your webhook url
-url = {{webhook url}}
-[Payload]
-    UserName   = "slack-post-cli"
-    IconEmoji = ":ghost:"
-    LinkNames = 1
